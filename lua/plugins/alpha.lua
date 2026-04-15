@@ -21,6 +21,7 @@ return {
       dashboard.button("h", "󰁯  Last files", ":Telescope oldfiles<CR>"),
       dashboard.button("e", "  New file", ":ene<CR>"),
       dashboard.button("f", "󰈞  Find file", ":Telescope find_files<CR>"),
+      dashboard.button(";", " Config files", ":e ~/.config/nvim/<CR>"),
       dashboard.button("q", "  Quit", ":qa<CR>"),
     }
 

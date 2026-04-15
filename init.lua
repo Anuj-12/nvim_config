@@ -20,4 +20,7 @@ require('lazy').setup({
     require 'plugins.alpha',
     require 'plugins.telescope',
     require 'plugins.noice',
+    require 'plugins.lsp',
+    require 'plugins.autocomplete',
+    require 'plugins.todo-comments',
 })
