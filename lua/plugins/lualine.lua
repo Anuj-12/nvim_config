@@ -2,11 +2,16 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
+        local function time()
+          local t = os.date("*t")
+          return string.format("%02d:%02d", t.hour, t.min)
+        end
+
         require('lualine').setup{
           options = {
             icons_enabled = true,
             theme = "auto",
-            component_separators = { left = '', right = ''},
+            component_separators = { left = '', right = ''},
             section_separators = { left = '', right = ''},
             disabled_filetypes = {
               statusline = {},
@@ -39,9 +44,9 @@ return {
             lualine_a = {'mode'},
             lualine_b = {'branch', 'diff', 'diagnostics'},
             lualine_c = {'filename'},
-            lualine_x = {'encoding', 'fileformat', 'filetype'},
+            lualine_x = {'encoding', 'filetype'},
             lualine_y = {'progress'},
-            lualine_z = {'location'}
+            lualine_z = {'location', time}
           },
           inactive_sections = {
             lualine_a = {},
