@@ -7,6 +7,11 @@ return {
     },
     config = function()
         require("noice").setup({
+            lsp = {
+                signature = {
+                    enabled = false,
+                },
+            },
             cmdline = {
                 view = "cmdline_popup", -- this is what you wanted
             },

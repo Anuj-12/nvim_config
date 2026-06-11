@@ -12,6 +12,10 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
+-- TODO: Add auto formating
+-- TODO: Indent guides
+-- TODO: Consider notification manager
+
 require('lazy').setup({
     require 'plugins.neotree',
     require 'plugins.colortheme',
@@ -23,4 +27,7 @@ require('lazy').setup({
     require 'plugins.lsp',
     require 'plugins.autocomplete',
     require 'plugins.todo-comments',
+    require 'plugins.markdown-renderer',
+    require 'plugins.bufferline',
+    require 'plugins.toggleterm',
 })

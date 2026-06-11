@@ -61,6 +61,9 @@
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
+          -- Read the floating message diagnostic
+          map('<leader>d', vim.diagnostic.open_float, 'Read Diagnostics')
+
           -- Rename the variable under your cursor.
           --  Most Language Servers support renaming across files, etc.
           map('grn', vim.lsp.buf.rename, '[R]e[n]ame')
@@ -73,6 +76,7 @@
           --  For example, in C this would take you to the header.
           map('grd', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
+          -- WARN: This is Goto Definition
           map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
 
           -- References

@@ -17,3 +17,5 @@ vim.opt.shiftwidth = 4    -- indentation size
 vim.opt.expandtab = true  -- use spaces instead of tabs
 
 vim.o.cursorline = true     -- show which line cursor is on
+
+vim.opt.termguicolors = true
