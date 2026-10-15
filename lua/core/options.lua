@@ -1,9 +1,9 @@
 vim.wo.number = true
 vim.o.relativenumber = true
 
-vim.o.clipboard = 'unnamedplus'     -- Sync clipboard with OS
+-- vim.o.clipboard = 'unnamedplus'     -- Sync clipboard with OS
 
-vim.o.wrap = false  -- display line as a long line (default: true)
+vim.o.wrap = true  -- display line as a long line (default: true)
 vim.o.linebreak = true   -- don't break in middle of words
 
 vim.o.mouse = 'a'   -- enbale mouse inside vim (default '')

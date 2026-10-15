@@ -61,14 +61,14 @@
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
-          -- Read the floating message diagnostic
+          -- READ THE FLOATING MESSAGE DIAGNOSTIC
           map('<leader>d', vim.diagnostic.open_float, 'Read Diagnostics')
 
-          -- Rename the variable under your cursor.
+          -- RENAME THE VARIABLE UNDER YOUR CURSOR.
           --  Most Language Servers support renaming across files, etc.
           map('grn', vim.lsp.buf.rename, '[R]e[n]ame')
 
-          -- Execute a code action, usually your cursor needs to be on top of an error
+          -- EXECUTE A CODE ACTION, USUALLY YOUR CURSOR NEEDS TO BE ON TOP OF AN ERROR
           -- or a suggestion from your LSP for this to activate.
           map('gra', vim.lsp.buf.code_action, '[G]oto Code [A]ction', { 'n', 'x' })
 

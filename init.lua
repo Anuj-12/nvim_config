@@ -14,7 +14,10 @@ rtp:prepend(lazypath)
 
 -- TODO: Add auto formating
 -- TODO: Indent guides
--- TODO: Consider notification manager
+
+-- TODO: Competitive programming template
+-- TODO: Shorcut to insert said template
+-- TODO: Java lsp
 
 require('lazy').setup({
     require 'plugins.neotree',
