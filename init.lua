@@ -12,12 +12,7 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
--- TODO: Add auto formating
--- TODO: Indent guides
-
--- TODO: Competitive programming template
--- TODO: Shorcut to insert said template
--- TODO: Java lsp
+-- TODO: Better Syntax Highlighting
 
 require('lazy').setup({
     require 'plugins.neotree',

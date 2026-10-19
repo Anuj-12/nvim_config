@@ -3,6 +3,8 @@ vim.o.relativenumber = true
 
 -- vim.o.clipboard = 'unnamedplus'     -- Sync clipboard with OS
 
+vim.o.udf = true    -- persistant undo history
+
 vim.o.wrap = true  -- display line as a long line (default: true)
 vim.o.linebreak = true   -- don't break in middle of words
 
